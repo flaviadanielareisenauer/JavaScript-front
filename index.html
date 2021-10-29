@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header-violeta letras-verdes">
-        <nav >
+        <nav>
             <ul>
                 <li>INICIO</li>
                 <li>PRODUCTOS</li>
@@ -18,9 +20,11 @@
         </nav>
     </header>
     <main>
-        <div class="contador">
-            <h1></h1>
-        </div>
+
+        <h1 class="contador"></h1>
+        <button id="btn-contador">CONTADOR</button>
+        <button id="btn-contador-stop">PARAR</button>
+
         <section>
             <article>
                 <img id="primer" src="https://placeimg.com/640/480/animals" alt="">
@@ -45,6 +49,22 @@
             </article>
         </section>
 
+        <div class="modal-background">
+            <div class="modal">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores consectetur tenetur ipsam est
+                    facilis ipsa quaerat reprehenderit eveniet enim placeat delectus, sit corporis illo odit? Dolores
+                    sint libero ullam placeat.</p>
+                <div class="modal-buttons">
+                    <form action="">
+                        <button type="submit" id="delete">ELIMINAR</button>
+                    </form>
+                    <button id="dontDelete">
+                        No quiero eliminar, tengo miedo
+                    </button>
+                </div>
+            </div>
+        </div>
+
         <form action="">
             <input id="nombre" type="text" placeholder="Nombre">
             <input id="apellido" type="text" placeholder="Apellido">
@@ -54,4 +74,5 @@
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
